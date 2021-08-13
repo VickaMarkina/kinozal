@@ -1,8 +1,9 @@
 @use "../presets/" as *;
 @use "../mixins/" as *;
 
-// .header {
-// }
+.header {
+  margin-bottom: 80px;
+}
 
 .header-logo {
   padding: 100px 0;

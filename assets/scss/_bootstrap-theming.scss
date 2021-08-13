@@ -4,6 +4,7 @@
 .navbar-inverse {
   background-color: $color-deep-dark;
   border-color: transparent;
+  margin-bottom: 0;
 
   .navbar-nav {
     > li > a {
@@ -65,4 +66,46 @@
 
 .navbar-header {
   text-align: center;
+}
+
+.panel-info {
+  border: none;
+  background-color: $color-gray-light;
+  box-sizing: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  > .panel-heading {
+    letter-spacing: 0.08em;
+    color: $color-white;
+    background-color: $color-accent;
+    border: none;
+    font-size: 1.25rem;
+  }
+}
+
+.panel-body {
+  border: 1px solid $color-gray;
+  border-radius: 0 0 4px 4px;
+}
+
+.btn-lg-lg,
+.btn-lg-group-lg > .form-control,
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
+.form-group-lg .form-control {
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  transition: background-color 0.5s;
 }
