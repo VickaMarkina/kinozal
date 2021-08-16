@@ -71,7 +71,7 @@
 .panel-info {
   border: none;
   background-color: $color-gray-light;
-  box-sizing: none;
+  box-shadow: none;
 
   &:not(:last-of-type) {
     margin-bottom: 30px;
