@@ -119,7 +119,14 @@
 }
 
 .comment {
-  margin-bottom: 13px;
+  @include sm-min {
+    margin-bottom: 13px;
+  }
+
+  @include sm-xs {
+    margin-bottom: 80px;
+  }
+
   &-title {
     position: relative;
 
