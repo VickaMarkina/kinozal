@@ -109,3 +109,8 @@
 .thumbnail {
   transition: background-color 0.5s;
 }
+
+.form-group-lg select[multiple].form-control,
+.form-group-lg textarea.form-control {
+  height: 214px;
+}

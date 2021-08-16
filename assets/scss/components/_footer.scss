@@ -1,2 +1,37 @@
 @use "../presets/" as *;
 @use "../mixins/" as *;
+
+.footer {
+  background-color: $color-dark;
+  padding-top: 45px;
+}
+
+.footer-top {
+  &-item {
+    &__link {
+      color: $color-gray-dark;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  &__info {
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__link {
+    color: $color-gray;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+  }
+}

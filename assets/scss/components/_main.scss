@@ -2,5 +2,152 @@
 @use "../mixins/" as *;
 
 .main {
-  margin-bottom: 80px;
+  margin-bottom: 67px;
+
+  .site-searsh {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films,
+.top-films {
+  &-title {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 8px;
+      margin-left: 15px;
+    }
+  }
+
+  &-row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: $gap;
+
+    .thumbnail {
+      margin-bottom: 0;
+      transition: background-color 0.25s;
+
+      &:hover,
+      &:focus {
+        border-color: $color-accent;
+        background-color: $color-accent;
+
+        h3 {
+          color: $color-white;
+        }
+      }
+    }
+
+    &__title {
+      @include text-shortener;
+    }
+  }
+}
+
+.top-films {
+  &-title {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 30px;
+      background-color: $color-accent-light;
+      position: absolute;
+      top: 10px;
+      left: -45px;
+      margin-right: $gap;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 7px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.news-movie {
+  &-title {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 30px;
+      background-color: $color-accent-light;
+      position: absolute;
+      top: 9px;
+      left: -45px;
+      margin-right: $gap;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 7px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.news-movie-item {
+  clear: both;
+  position: relative;
+
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+
+    .thumbnail {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.65rem;
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    transition: 0.25s;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__btn {
+    float: right;
+    margin-bottom: 30px !important;
+  }
 }

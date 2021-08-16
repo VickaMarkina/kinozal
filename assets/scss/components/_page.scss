@@ -1,2 +1,151 @@
 @use "../presets/" as *;
 @use "../mixins/" as *;
+
+.illusion-films {
+  &-title {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 8px;
+      margin-left: 15px;
+    }
+  }
+
+  &__video {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    border: 1px solid $color-gray;
+  }
+
+  &__caption {
+    padding: 19px 0;
+    background-color: $color-gray-light;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid $color-gray;
+    border-top: none;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.714175rem;
+    &:not(:last-of-type) {
+      margin-right: 16px;
+    }
+  }
+
+  &__badge {
+    font-size: 0.96rem;
+    line-height: 0.96rem;
+  }
+}
+
+.description-film {
+  &-title {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 30px;
+      background-color: $color-accent-light;
+      position: absolute;
+      top: 10px;
+      left: -45px;
+      margin-right: $gap;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 7px;
+      margin-left: 15px;
+    }
+  }
+
+  &__text {
+    padding: 19px;
+    background-color: $color-gray-light;
+    border-radius: 4px;
+    border: 1px solid $color-gray;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews {
+  &-title {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 30px;
+      background-color: $color-accent-light;
+      position: absolute;
+      top: 10px;
+      left: -45px;
+      margin-right: $gap;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 7px;
+      margin-left: 15px;
+    }
+  }
+
+  &-item {
+    &__icon {
+      padding-right: 7px !important;
+    }
+  }
+}
+
+.comment {
+  margin-bottom: 13px;
+  &-title {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 30px;
+      background-color: $color-accent-light;
+      position: absolute;
+      top: 10px;
+      left: -45px;
+      margin-right: $gap;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $color-accent-light;
+      position: absolute;
+      bottom: 7px;
+      margin-left: 15px;
+    }
+  }
+
+  &-btn {
+    float: right !important;
+  }
+
+  &-textarea {
+    padding: 7px 12px !important;
+  }
+}
